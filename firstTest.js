@@ -6,6 +6,6 @@ var options = {
 };
 var client = webdriverio.remote(options);
 
-client.init().url('http://itepuenf.com.br/').click("#portal_link a").getTitle().then(function(title){
+client.init().url('http://itepuenf.com.br').click("#portal_link a").getTitle().then(function(title){
   console.log("Estamos em "+title);
 }).end();
